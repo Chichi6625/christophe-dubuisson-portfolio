@@ -6,10 +6,10 @@ import { portfolioImages } from "./assets";
 const copy = {
   en: {
     nav: ["Profile", "French Vibe", "Experience", "Education"],
-    eyebrow: "EDTECH PRODUCT DESIGNER & DEVELOPER",
-    hero: <>I connect pedagogy, language<br/>and product design.</>,
-    intro: "I design learning experiences and build the products that deliver them — from instructional architecture to interfaces, analytics and AI-assisted authoring.",
-    contact: "Contact me", view: "View French Vibe",
+    eyebrow: "LANGUAGE · PEDAGOGY · TECHNOLOGY",
+    hero: <>I connect<br/>pedagogy,<br/>language and<br/>product design.</>,
+    intro: "French language specialist and instructional designer with more than 10 years of experience in China. I also independently design and develop a multilingual EdTech platform for learners, teachers and institutions.",
+    contact: "Let’s work together", view: "LinkedIn ↗",
     profiles: [
       ["AI Training & Evaluation", "Designing rubrics, evaluating model outputs and improving educational AI with human judgment."],
       ["Instructional Design", "Turning learning goals into clear pathways, activities, feedback loops and measurable progress."],
@@ -23,10 +23,10 @@ const copy = {
   },
   fr: {
     nav: ["Profil", "French Vibe", "Expérience", "Formation"],
-    eyebrow: "CONCEPTEUR & DÉVELOPPEUR DE PRODUITS EDTECH",
-    hero: <>Je relie pédagogie, langues<br/>et conception de produit.</>,
-    intro: "Je conçois des expériences d’apprentissage et les produits qui les rendent possibles — de l’architecture pédagogique aux interfaces, à l’analyse et à la création assistée par IA.",
-    contact: "Me contacter", view: "Découvrir French Vibe",
+    eyebrow: "LANGUES · PÉDAGOGIE · TECHNOLOGIE",
+    hero: <>Je relie<br/>pédagogie,<br/>langues et<br/>conception de produit.</>,
+    intro: "Spécialiste de la langue française et ingénieur pédagogique avec plus de 10 ans d’expérience en Chine. Je conçois et développe également une plateforme EdTech multilingue destinée aux apprenants, aux enseignants et aux établissements.",
+    contact: "Travaillons ensemble", view: "LinkedIn ↗",
     profiles: [
       ["Entraînement & évaluation de l’IA", "Conception de grilles, évaluation des réponses et amélioration de l’IA éducative par le jugement humain."],
       ["Ingénierie pédagogique", "Transformer des objectifs en parcours clairs, activités, boucles de feedback et progrès mesurables."],
@@ -44,8 +44,11 @@ export default function Home() {
   const [lang, setLang] = useState<"en" | "fr">("en");
   const t = copy[lang];
   return <main>
-    <header><a className="brand" href="#top">CD.</a><nav>{t.nav.map((n,i)=><a key={n} href={["#profile","#work","#experience","#education"][i]}>{n}</a>)}</nav><div className="lang"><button className={lang==="en"?"active":""} onClick={()=>setLang("en")}>EN</button><button className={lang==="fr"?"active":""} onClick={()=>setLang("fr")}>FR</button></div></header>
-    <section id="top" className="hero"><p className="eyebrow">{t.eyebrow}</p><h1>{t.hero}</h1><p className="lead">{t.intro}</p><div className="actions"><a className="primary" href="mailto:christophe.dubuisson@gmail.com">{t.contact}</a><a href="#work">{t.view} ↓</a></div><div className="identity"><div className="monogram">CD</div><div><strong>Christophe Dubuisson</strong><span>EdTech Product Designer · Instructional Designer · Developer</span></div></div></section>
+    <header><a className="brand" href="#top">CD</a><nav>{t.nav.map((n,i)=><a key={n} href={["#profile","#work","#experience","#education"][i]}>{n}</a>)}</nav><div className="lang"><button className={lang==="en"?"active":""} onClick={()=>setLang("en")}>EN</button><button className={lang==="fr"?"active":""} onClick={()=>setLang("fr")}>FR</button></div></header>
+    <section id="top" className="hero">
+      <div className="heroCopy"><p className="eyebrow">{t.eyebrow}</p><h1>{t.hero}</h1><p className="lead">{t.intro}</p><div className="actions"><a className="primary" href="mailto:christophe.dubuisson@gmail.com">{t.contact}</a><a className="secondary" href="https://www.linkedin.com" target="_blank">{t.view}</a></div></div>
+      <aside className="identity"><h2>Christophe<br/>Dubuisson</h2><ul><li>French Language Specialist</li><li>AI Training &amp; Evaluation</li><li>Instructional Designer</li><li>EdTech Developer</li></ul><p>Changsha, China · Remote</p></aside>
+    </section>
     <section id="profile" className="cards">{t.profiles.map((p,i)=><article key={p[0]}><span className="index">0{i+1}</span><h2>{p[0]}</h2><p>{p[1]}</p></article>)}</section>
     <section id="work" className="project"><p className="eyebrow">SELECTED PROJECT</p><h2>{t.project}</h2><p className="projectLead">{t.projectLead}</p>
       <h3>{t.learner}</h3><div className="gallery learner">{portfolioImages.slice(0,5).map(x=><figure key={x.alt}><img src={x.src} alt={x.alt}/><figcaption>{x.alt}</figcaption></figure>)}</div>
