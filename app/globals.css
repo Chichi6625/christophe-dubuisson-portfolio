@@ -122,12 +122,12 @@ a {
 }
 
 .lead {
+  max-width: 790px;
+  margin: 0 auto;
+  color: var(--muted);
   font-size: 19px;
   line-height: 1.8;
-  color: var(--muted);
-  max-width: 790px;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: center;
 }
 
 .actions {
@@ -580,7 +580,6 @@ footer a {
     font-size: 47px;
   }
 
-  .lead,
   .cards p,
   .projectBody,
   .caseText p,
