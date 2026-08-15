@@ -106,6 +106,10 @@ a {
   color: #94784a;
 }
 
+.hero > div:first-child > .eyebrow {
+  text-align: center;
+}
+
 .hero h1 {
   font-family: var(--font-serif), serif;
   font-size: clamp(52px, 6vw, 92px);
@@ -130,6 +134,7 @@ a {
   display: flex;
   gap: 12px;
   margin-top: 34px;
+  justify-content: center;
 }
 
 .primary,
