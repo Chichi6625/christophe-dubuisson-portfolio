@@ -384,6 +384,14 @@ figcaption {
   border-top: 1px solid #3b5268;
 }
 
+.process > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .process ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -396,6 +404,11 @@ figcaption {
 .process li {
   padding: 18px;
   border: 1px solid #486078;
+  min-height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .notice {
@@ -449,6 +462,13 @@ figcaption {
 
 .education {
   background: var(--cream);
+}
+
+.education .amp {
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 1.05;
 }
 
 .degreeList article {

@@ -20,7 +20,7 @@ const content = {
     facts: ["Solo project since February 2026", "WeChat Mini Program + web dashboard", "Tencent CloudBase", "Human-reviewed AI workflows"],
     learner: "Learner experience", learnerText: "Structured pathways combine context, vocabulary, interactive practice, guided production and immediate feedback.",
     dashboard: "Teacher & institution dashboard", dashboardText: "Role-based tools support content management, learner monitoring, correction workflows, reporting and AI-assisted module creation.",
-    process: "What I designed and built",
+    process: <>What I designed<br/>and built</>,
     processItems: ["Learning architecture and content model", "Learner and teacher journeys", "Interactive exercises and guided production", "Class analytics and correction workflows", "Role-based administration", "AI-assisted authoring with human validation"],
     protection: "Portfolio note", protectionText: "This case study presents selected interface views only. Source code, database structure, prompts, credentials and proprietary implementation details are intentionally not disclosed.",
     experience: "Experience",
@@ -29,7 +29,7 @@ const content = {
       ["French Lecturer", "Central South University · Aug 2018–Present", "Undergraduate and postgraduate teaching, course and assessment design, dissertation guidance and digital learning resources."],
       ["French Lecturer", "Xiangtan University · Feb 2015–Jul 2018", "French language and culture courses, adapted materials and assessments, conversation club and intercultural activities."],
     ],
-    education: "Education & credentials",
+    education: <>Education<span className="amp">&amp;</span>credentials</>,
     degrees: [["Master’s Degree — FLE/FLS/FOS", "Université d’Artois · 2020–2022 · Graduated with distinction"], ["Chinese Language Studies", "Zhejiang University · 2014–2015"], ["DAEFLE", "Alliance Française Paris Île-de-France · 2013"], ["Bachelor’s — Mathematics & Computer Science", "Université de Strasbourg · 2009–2012"]],
     footer: "French language expertise · AI evaluation · Instructional design · EdTech",
   },
@@ -45,17 +45,17 @@ const content = {
     facts: ["Projet individuel depuis février 2026", "Mini-programme WeChat + dashboard web", "Tencent CloudBase", "Processus IA validés humainement"],
     learner: "Expérience apprenant", learnerText: "Des parcours structurés réunissent contexte, vocabulaire, pratique interactive, production guidée et retour immédiat.",
     dashboard: "Dashboard enseignant & établissement", dashboardText: "Des outils par rôle permettent de gérer les contenus, suivre les apprenants, corriger, produire des rapports et créer des modules avec l’aide de l’IA.",
-    process: "Ce que j’ai conçu et développé", processItems: ["Architecture pédagogique et modèle de contenu", "Parcours apprenant et enseignant", "Exercices interactifs et productions guidées", "Suivi de classe et circuits de correction", "Administration par rôles", "Création assistée par IA avec validation humaine"],
+    process: <>Ce que j’ai conçu<br/>et développé</>, processItems: ["Architecture pédagogique et modèle de contenu", "Parcours apprenant et enseignant", "Exercices interactifs et productions guidées", "Suivi de classe et circuits de correction", "Administration par rôles", "Création assistée par IA avec validation humaine"],
     protection: "Note de confidentialité", protectionText: "Cette étude de cas présente uniquement des vues d’interface sélectionnées. Le code source, la structure de la base, les prompts, les identifiants et les détails propriétaires ne sont pas divulgués.",
     experience: "Expérience",
     jobs: [["Développeur EdTech & ingénieur pédagogique indépendant", "French Vibe · fév. 2026–aujourd’hui", "Conception et développement autonome du produit : architecture pédagogique, UX, intégration CloudBase, tests et itérations."], ["Lecteur de français", "Central South University · août 2018–aujourd’hui", "Enseignement en licence et master, conception de cours et d’évaluations, accompagnement de mémoires et ressources numériques."], ["Lecteur de français", "Xiangtan University · fév. 2015–juil. 2018", "Cours de langue et de culture, supports et évaluations adaptés, club de conversation et activités interculturelles."]],
-    education: "Formation & certification", degrees: [["Master FLE/FLS/FOS", "Université d’Artois · 2020–2022 · Mention"], ["Études de langue chinoise", "Université du Zhejiang · 2014–2015"], ["DAEFLE", "Alliance Française Paris Île-de-France · 2013"], ["Licence Mathématiques & Informatique", "Université de Strasbourg · 2009–2012"]],
+    education: <>Formation<span className="amp">&amp;</span>certification</>, degrees: [["Master FLE/FLS/FOS", "Université d’Artois · 2020–2022 · Mention"], ["Études de langue chinoise", "Université du Zhejiang · 2014–2015"], ["DAEFLE", "Alliance Française Paris Île-de-France · 2013"], ["Licence Mathématiques & Informatique", "Université de Strasbourg · 2009–2012"]],
     footer: "Expertise linguistique · Évaluation de l’IA · Ingénierie pédagogique · EdTech",
   },
 };
 
-const learners = [["/assets/learner-themes.png", "Theme selection"], ["/assets/learner-vocabulary.png", "Bilingual vocabulary"], ["/assets/learner-practice.png", "Interactive practice"], ["/assets/learner-production.png", "Guided production"], ["/assets/learner-results.png", "Immediate results"]];
-const dashboards = [["/assets/dashboard-ai-actions.png", "Class monitoring and AI actions"], ["/assets/dashboard-learning-detail.png", "Detailed learner progress"], ["/assets/dashboard-schools.png", "Demo institution management"], ["/assets/dashboard-content.png", "Demo content management"], ["/assets/module-builder.png", "AI-assisted module builder"]];
+const learners = [["/assets/learner-themes.webp", "Theme selection"], ["/assets/learner-vocabulary.webp", "Bilingual vocabulary"], ["/assets/learner-practice.webp", "Interactive practice"], ["/assets/learner-production.webp", "Guided production"], ["/assets/learner-results.webp", "Immediate results"]];
+const dashboards = [["/assets/dashboard-ai-actions.webp", "Class monitoring and AI actions"], ["/assets/dashboard-learning-detail.webp", "Detailed learner progress"], ["/assets/dashboard-schools.webp", "Demo institution management"], ["/assets/dashboard-content.webp", "Demo content management"], ["/assets/module-builder.webp", "AI-assisted module builder"]];
 
 export default function Home() {
   const [lang, setLang] = useState<"en" | "fr">("en"); const t = content[lang];
