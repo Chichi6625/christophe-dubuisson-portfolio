@@ -196,6 +196,7 @@ a {
   background: var(--cream);
   padding: 30px;
   min-height: 230px;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,8 +205,13 @@ a {
 }
 
 .cards article span {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
   color: var(--gold);
   font-weight: 800;
+  text-align: center;
 }
 
 .cards h2 {
