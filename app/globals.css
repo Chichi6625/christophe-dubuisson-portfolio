@@ -196,25 +196,22 @@ a {
   background: var(--cream);
   padding: 30px;
   min-height: 230px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: 24px minmax(90px, auto) minmax(105px, auto);
+  align-content: center;
+  justify-items: center;
   text-align: center;
 }
 
 .cards article span {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 100%;
   color: var(--gold);
   font-weight: 800;
   text-align: center;
 }
 
 .cards h2 {
+  align-self: center;
+  margin: 0;
   font-family: var(--font-serif);
   font-size: 27px;
   color: var(--navy);
@@ -246,6 +243,8 @@ figcaption {
 }
 
 .cards p {
+  align-self: start;
+  margin: 0;
   text-align: center;
   text-justify: auto;
 }
