@@ -196,6 +196,11 @@ a {
   background: var(--cream);
   padding: 30px;
   min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .cards article span {
@@ -222,7 +227,7 @@ figcaption {
   hyphens: none;
 }
 
-.cards p,
+ .cards p,
 .projectIntro,
 .projectBody,
 .timeline p,
@@ -232,6 +237,11 @@ figcaption {
   line-height: 1.75;
   text-align: justify;
   text-justify: inter-word;
+}
+
+.cards p {
+  text-align: center;
+  text-justify: auto;
 }
 
 .project {
