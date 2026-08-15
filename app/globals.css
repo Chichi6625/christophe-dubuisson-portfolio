@@ -371,7 +371,7 @@ figcaption {
   display: grid;
   grid-template-columns: 1fr;
   gap: 38px;
-  max-width: min(1420px, 100%);
+  max-width: min(1150px, 100%);
   margin: 0 auto;
 }
 
