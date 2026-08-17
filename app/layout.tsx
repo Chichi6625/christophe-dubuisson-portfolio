@@ -6,8 +6,8 @@ const sans = Manrope({ variable: "--font-sans", subsets: ["latin"] });
 const serif = Source_Serif_4({ variable: "--font-serif", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Christophe Dubuisson — AI Evaluation, Instructional Design & EdTech",
-  description: "Portfolio of Christophe Dubuisson, French language specialist, AI evaluator, instructional designer and independent EdTech developer.",
+  title: "Christophe Dubuisson — French, AI Evaluation & Instructional Design",
+  description: "Portfolio of Christophe Dubuisson, French language specialist, AI evaluator and instructional designer with more than 10 years of experience in China.",
   icons: { icon: "/favicon.svg" },
   other: { "codex-preview": "development" },
 };
